@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js"></script>
+    <title>Clock App</title>
+  </head>
+  <body>
+    <section class="container image">
+      <div class="wrapper">
+        <header class="header">
+          <blockquote class="blockquote mb-0">
+            <p class="blockquote__quote">loading...</p>
+            <footer class="blockquote-footer">
+              <cite class="blockquote__cite" title="Source Title"></cite>
+            </footer>
+          </blockquote>
+          <span class="reload image"></span>
+        </header>
+        <p class="greeting">
+          <span class="greeting__icon image"></span>
+          <span class="greeting__greet">good morning</span>
+          <span class="greeting__current">, it's currently</span>
+        </p>
+        <div class="watch">
+          <span class="watch__clock">11:37</span>
+        </div>
+        <span class="watch__utc">-04</span>
+        <div class="footer">
+          <span class="timezone">in ,bolivia</span>
+        </div>
+        <div class="button">
+          <button class="btn">
+            more
+            <span class="btn__icon image">
+              <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="" cx="20" cy="20" r="20" />
+                  <path stroke="#FFF" stroke-width="2" d="M14 23l6-6 6 6" />
+                </g>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="modal__left">
+        <div class="item">
+          <span class="item__title"> current timezone </span>
+          <span class="item__info"> Europe/London </span>
+        </div>
+        <div class="item">
+          <span class="item__title"> day of the year </span>
+          <span class="item__info"> 271 </span>
+        </div>
+      </div>
+      <div class="modal__rigth">
+        <div class="item">
+          <span class="item__title"> day of the week </span>
+          <span class="item__info"> 2 </span>
+        </div>
+        <div class="item">
+          <span class="item__title"> week number </span>
+          <span class="item__info"> 39 </span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
