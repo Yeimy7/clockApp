@@ -54,13 +54,14 @@ window.addEventListener('load', () => {
         if (response.ok) {
             timezone.textContent = data.country_name;
             updateTimezone(data.time_zone);
+            console.log(data.time_zone)
         } else {
             quote.textContent = "An error occured";
             console.log(data);
         }
     }
     async function updateTimezone(timezone) {
-        const response = await fetch("http://worldtimeapi.org/api/timezone/" + timezone);
+        const response = await fetch("https://worldtimeapi.org/api/timezone/" + timezone);
         const data = await response.json();
         if (response.ok) {
             utc.textContent = data.abbreviation;
